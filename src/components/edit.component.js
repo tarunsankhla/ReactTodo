@@ -59,22 +59,9 @@ export default class EditTodo extends Component {
         
         this.props.history.push('/');
     }
-    // onSubmit(e){
-    //     e.preventDefault();
-    //     const obj = {
-    //         todo_description:this.state.todo_description,
-    //         todo_responsible:this.state.todo_responsible,
-    //         todo_priority:this.state.todo_priority,
-    //         todo_completed:this.state.todo_completed
+    
 
-    //     }
-    //     console.log(obj);
-    //     axios.post('http://localhost:4000/todos/update/'+this.props.match.params.id,obj)
-    //     .then(response=>console.log(response.data));
-
-    //     this.props.history.push('/')
-
-    // }
+  
     render() {
         return (
             <div>
@@ -148,9 +135,7 @@ export default class EditTodo extends Component {
                         <input type="submit" value="Update Todo" className="btn btn-primary" />
                     </div>
 
-                    {/* <div className="form-group">
-                        <input type='submit' value='Update' className='btn btn-primary' />
-                    </div> */}
+                  
                 </form>
             </div>
         )
